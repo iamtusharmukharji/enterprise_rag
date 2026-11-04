@@ -1,0 +1,66 @@
+enterprise-rag/
+│
+├── app/
+│   ├── api/
+│   │   ├── routes/
+│   │   │   ├── chat.py
+│   │   │   └── documents.py
+│   │   └── dependencies.py
+│   │
+│   ├── core/
+│   │   ├── config.py
+│   │   ├── logging.py
+│   │   └── exceptions.py
+│   │
+│   ├── ingestion/
+│   │   ├── loader.py
+│   │   ├── cleaner.py
+│   │   ├── chunker.py
+│   │   ├── metadata.py
+│   │   └── pipeline.py
+│   │
+│   ├── embeddings/
+│   │   └── embedder.py
+│   │
+│   ├── retrieval/
+│   │   ├── dense.py
+│   │   ├── sparse.py
+│   │   ├── hybrid.py
+│   │   ├── rrf.py
+│   │   └── reranker.py
+│   │
+│   ├── rag/
+│   │   ├── prompts/
+│   │   │   ├── rewrite.py
+│   │   │   ├── generation.py
+│   │   │   └── grading.py
+│   │   ├── context.py
+│   │   └── generator.py
+│   │
+│   ├── graph/
+│   │   ├── state.py
+│   │   ├── nodes.py
+│   │   ├── edges.py
+│   │   └── graph.py
+│   │
+│   ├── vectorstore/
+│   │   └── qdrant.py
+│   │
+│   ├── evaluation/
+│   │   ├── dataset.py
+│   │   └── metrics.py
+│   │
+│   └── main.py
+│
+├── documents/
+├── tests/
+│
+├── scripts/
+│   └── ingest.py
+│
+├── docker-compose.yml
+├── Dockerfile
+├── requirements.txt
+├── .env
+├── .env.example
+└── README.md

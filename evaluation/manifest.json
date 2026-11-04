@@ -1,0 +1,119 @@
+[
+  {
+    "file_path": "documents/hr/leave_policy.md",
+    "document_id": "HR-LEAVE-001",
+    "department": "HR",
+    "category": "leave",
+    "version": "2",
+    "effective_date": "2026-07-01",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/hr/remote_work_policy.md",
+    "document_id": "HR-REMOTE-001",
+    "department": "HR",
+    "category": "remote_work",
+    "version": "2",
+    "effective_date": "2026-07-01",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/hr/reimbursement_policy.md",
+    "document_id": "HR-REIMB-001",
+    "department": "HR",
+    "category": "reimbursement",
+    "version": "3",
+    "effective_date": "2026-08-01",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/hr/travel_policy.md",
+    "document_id": "HR-TRAVEL-001",
+    "department": "HR",
+    "category": "travel",
+    "version": "2",
+    "effective_date": "2026-06-15",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/engineering/code_review_guidelines.md",
+    "document_id": "ENG-CR-001",
+    "department": "Engineering",
+    "category": "code_review",
+    "version": "4",
+    "effective_date": "2026-05-01",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/engineering/deployment_policy.md",
+    "document_id": "ENG-DEPLOY-001",
+    "department": "Engineering",
+    "category": "deployment",
+    "version": "3",
+    "effective_date": "2026-06-01",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/engineering/incident_management.md",
+    "document_id": "ENG-INC-001",
+    "department": "Engineering",
+    "category": "incident_management",
+    "version": "5",
+    "effective_date": "2026-07-15",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/engineering/security_guidelines.md",
+    "document_id": "ENG-SEC-001",
+    "department": "Engineering",
+    "category": "security",
+    "version": "4",
+    "effective_date": "2026-07-01",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/finance/expense_policy.md",
+    "document_id": "FIN-EXP-001",
+    "department": "Finance",
+    "category": "expenses",
+    "version": "3",
+    "effective_date": "2026-06-01",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/finance/procurement_policy.md",
+    "document_id": "FIN-PROC-001",
+    "department": "Finance",
+    "category": "procurement",
+    "version": "4",
+    "effective_date": "2026-05-15",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/product/release_process.md",
+    "document_id": "PROD-REL-001",
+    "department": "Product",
+    "category": "release_management",
+    "version": "3",
+    "effective_date": "2026-06-20",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/product/api_versioning.md",
+    "document_id": "PROD-API-001",
+    "department": "Product",
+    "category": "api_versioning",
+    "version": "2",
+    "effective_date": "2026-07-10",
+    "access_level": "internal"
+  },
+  {
+    "file_path": "documents/security/data_classification.md",
+    "document_id": "SEC-CLASS-001",
+    "department": "Security",
+    "category": "data_classification",
+    "version": "2",
+    "effective_date": "2026-07-01",
+    "access_level": "internal"
+  }
+]

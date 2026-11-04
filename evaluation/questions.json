@@ -1,0 +1,411 @@
+{
+  "corpus_id": "northstar-enterprise-rag-v1",
+  "version": "1.0",
+  "question_count": 45,
+  "questions": [
+    {
+      "id": "E001",
+      "type": "direct",
+      "question": "How many working days of paternity leave are available?",
+      "answer": "Eligible employees receive 15 working days of paid paternity leave.",
+      "sources": [
+        "HR-LEAVE-001"
+      ]
+    },
+    {
+      "id": "E002",
+      "type": "direct",
+      "question": "How much home-office equipment can an employee claim?",
+      "answer": "Up to ₹25,000 once every 24 months, cumulatively across eligible equipment.",
+      "sources": [
+        "HR-REIMB-001"
+      ]
+    },
+    {
+      "id": "E003",
+      "type": "direct",
+      "question": "How many remote-work days per week are normally allowed?",
+      "answer": "Up to 3 remote days per week for eligible hybrid employees.",
+      "sources": [
+        "HR-REMOTE-001"
+      ]
+    },
+    {
+      "id": "E004",
+      "type": "direct",
+      "question": "What is the domestic hotel ceiling?",
+      "answer": "₹8,000 per night excluding applicable taxes.",
+      "sources": [
+        "HR-TRAVEL-001"
+      ]
+    },
+    {
+      "id": "E005",
+      "type": "direct",
+      "question": "How many approvals are required for security-sensitive production code changes?",
+      "answer": "At least 2 approvals, including one reviewer with relevant security ownership.",
+      "sources": [
+        "ENG-CR-001"
+      ]
+    },
+    {
+      "id": "E006",
+      "type": "direct",
+      "question": "What environments does Northstar use?",
+      "answer": "Development, staging, and production.",
+      "sources": [
+        "ENG-DEPLOY-001"
+      ]
+    },
+    {
+      "id": "E007",
+      "type": "direct",
+      "question": "How quickly must a SEV-1 incident be acknowledged?",
+      "answer": "Within 15 minutes.",
+      "sources": [
+        "ENG-INC-001"
+      ]
+    },
+    {
+      "id": "E008",
+      "type": "direct",
+      "question": "Can production secrets be committed to source control?",
+      "answer": "No. Production secrets must be stored in the approved secrets-management system.",
+      "sources": [
+        "ENG-SEC-001"
+      ]
+    },
+    {
+      "id": "E009",
+      "type": "direct",
+      "question": "What approval is required for an expense of ₹35,000?",
+      "answer": "Manager and department-head approval.",
+      "sources": [
+        "FIN-EXP-001"
+      ]
+    },
+    {
+      "id": "E010",
+      "type": "direct",
+      "question": "When is a purchase order required?",
+      "answer": "Before committing the company to purchases above ₹25,000 unless an approved exception applies.",
+      "sources": [
+        "FIN-PROC-001"
+      ]
+    },
+    {
+      "id": "E011",
+      "type": "direct",
+      "question": "Who approves release readiness before production?",
+      "answer": "The product owner approves release readiness after QA completes the agreed test scope.",
+      "sources": [
+        "PROD-REL-001"
+      ]
+    },
+    {
+      "id": "E012",
+      "type": "direct",
+      "question": "How long is the normal API deprecation notice?",
+      "answer": "At least 6 months before shutdown.",
+      "sources": [
+        "PROD-API-001"
+      ]
+    },
+    {
+      "id": "E013",
+      "type": "direct",
+      "question": "What is an example of Restricted data?",
+      "answer": "Production credentials, private cryptographic keys, highly sensitive personal data, and security investigation evidence are examples.",
+      "sources": [
+        "SEC-CLASS-001"
+      ]
+    },
+    {
+      "id": "E014",
+      "type": "direct",
+      "question": "How long can annual leave be carried forward?",
+      "answer": "Up to 12 working days into the next calendar year.",
+      "sources": [
+        "HR-LEAVE-001"
+      ]
+    },
+    {
+      "id": "E015",
+      "type": "direct",
+      "question": "What is the monthly home-internet reimbursement limit?",
+      "answer": "Up to ₹1,500 per month when included in the approved remote-work benefit.",
+      "sources": [
+        "HR-REIMB-001"
+      ]
+    },
+    {
+      "id": "E016",
+      "type": "paraphrased",
+      "question": "If I work remotely, can I get reimbursed for an ergonomic chair, and what is the ceiling?",
+      "answer": "Yes. Approved remote or hybrid employees can claim eligible ergonomic equipment within a cumulative ₹25,000 allowance every 24 months.",
+      "sources": [
+        "HR-REMOTE-001",
+        "HR-REIMB-001"
+      ]
+    },
+    {
+      "id": "E017",
+      "type": "paraphrased",
+      "question": "What is the response-time target for the most severe production incident?",
+      "answer": "A SEV-1 incident must be acknowledged within 15 minutes.",
+      "sources": [
+        "ENG-INC-001"
+      ]
+    },
+    {
+      "id": "E018",
+      "type": "paraphrased",
+      "question": "Can I put an API token into Git if it is only for development?",
+      "answer": "Production secrets must never be committed to source control; secrets should be managed through approved secret-management mechanisms.",
+      "sources": [
+        "ENG-SEC-001"
+      ]
+    },
+    {
+      "id": "E019",
+      "type": "paraphrased",
+      "question": "What level of approval does a ₹40k business purchase need?",
+      "answer": "A purchase above ₹25,000 and up to ₹100,000 requires manager and department-head approval.",
+      "sources": [
+        "FIN-PROC-001"
+      ]
+    },
+    {
+      "id": "E020",
+      "type": "paraphrased",
+      "question": "How long do we normally give customers before retiring an API version?",
+      "answer": "At least 6 months of deprecation notice is required before shutdown, except for security emergencies.",
+      "sources": [
+        "PROD-API-001"
+      ]
+    },
+    {
+      "id": "E021",
+      "type": "paraphrased",
+      "question": "If a pull request changes authentication, is one reviewer enough?",
+      "answer": "No. Authentication-related changes require at least 2 approvals, including one reviewer with relevant security ownership.",
+      "sources": [
+        "ENG-CR-001"
+      ]
+    },
+    {
+      "id": "E022",
+      "type": "paraphrased",
+      "question": "What happens to annual leave above the carry-forward cap?",
+      "answer": "The balance above 12 working days normally expires on 31 March unless HR approves an exception.",
+      "sources": [
+        "HR-LEAVE-001"
+      ]
+    },
+    {
+      "id": "E023",
+      "type": "paraphrased",
+      "question": "Can we roll back a production release if latency suddenly gets bad?",
+      "answer": "Yes. If error rate, latency, or critical functionality exceeds the service rollback threshold, the release owner should initiate rollback.",
+      "sources": [
+        "ENG-DEPLOY-001"
+      ]
+    },
+    {
+      "id": "E024",
+      "type": "paraphrased",
+      "question": "Which classification should I use if a file contains both internal and confidential material?",
+      "answer": "Treat the document as Confidential.",
+      "sources": [
+        "SEC-CLASS-001"
+      ]
+    },
+    {
+      "id": "E025",
+      "type": "paraphrased",
+      "question": "Does business class become allowed automatically on a long flight?",
+      "answer": "No. Business class is permitted only for flights longer than 10 hours when the department head approves the exception.",
+      "sources": [
+        "HR-TRAVEL-001"
+      ]
+    },
+    {
+      "id": "E026",
+      "type": "multi_document",
+      "question": "I work remotely and need an ergonomic chair. What is the reimbursement limit and what security rule applies to my remote device?",
+      "answer": "Eligible remote/hybrid employees can claim up to ₹25,000 for approved ergonomic home-office equipment once every 24 months. Remote access must use company-managed devices and the approved VPN on untrusted networks.",
+      "sources": [
+        "HR-REIMB-001",
+        "ENG-SEC-001"
+      ]
+    },
+    {
+      "id": "E027",
+      "type": "multi_document",
+      "question": "A production deployment causes severe customer impact. What should the team do about rollback and incident handling?",
+      "answer": "The release owner should initiate rollback when the service rollback threshold is exceeded, while the incident team should classify and manage the incident according to severity. A SEV-1 requires acknowledgement within 15 minutes and an Incident Commander.",
+      "sources": [
+        "ENG-DEPLOY-001",
+        "ENG-INC-001"
+      ]
+    },
+    {
+      "id": "E028",
+      "type": "multi_document",
+      "question": "A vendor needs access to confidential company data. What procurement and security controls apply?",
+      "answer": "The vendor must complete onboarding, and Security review is required when a vendor accesses confidential data or privileged resources. Confidential data requires access control based on business need.",
+      "sources": [
+        "FIN-PROC-001",
+        "ENG-SEC-001",
+        "SEC-CLASS-001"
+      ]
+    },
+    {
+      "id": "E029",
+      "type": "multi_document",
+      "question": "Can an emergency security fix bypass normal code review and deployment timing?",
+      "answer": "Emergency changes may bypass normal review when delaying the change creates greater operational or security risk, with retrospective review within 1 business day. Emergency deployments may also occur outside standard windows when needed to mitigate a critical security issue.",
+      "sources": [
+        "ENG-CR-001",
+        "ENG-DEPLOY-001"
+      ]
+    },
+    {
+      "id": "E030",
+      "type": "multi_document",
+      "question": "If a customer-facing release is high risk, what should be prepared before and after deployment?",
+      "answer": "The release should have a rollout plan, monitoring criteria, and rollback plan; after full rollout, enhanced monitoring should continue for at least 60 minutes.",
+      "sources": [
+        "PROD-REL-001",
+        "ENG-DEPLOY-001"
+      ]
+    },
+    {
+      "id": "E031",
+      "type": "multi_document",
+      "question": "An employee travels internationally and buys a hotel room. Which approval and expense rules apply?",
+      "answer": "International travel requires manager and department-head approval. Country-specific lodging limits maintained by Finance may apply, and travel expense claims should normally be submitted within 30 calendar days after returning.",
+      "sources": [
+        "HR-TRAVEL-001",
+        "FIN-EXP-001"
+      ]
+    },
+    {
+      "id": "E032",
+      "type": "multi_document",
+      "question": "An API endpoint has a serious security vulnerability. Can its six-month deprecation period be shortened?",
+      "answer": "Yes. A vulnerable endpoint may be disabled sooner when continued operation creates material security risk, with the decision documented by the security team and API owner.",
+      "sources": [
+        "PROD-API-001",
+        "ENG-SEC-001"
+      ]
+    },
+    {
+      "id": "E033",
+      "type": "multi_document",
+      "question": "An engineer working from home suspects credentials were exposed. What should happen?",
+      "answer": "The suspected compromise must be reported immediately to Security and handled as a security incident; relevant logs must not be deleted or altered before investigation.",
+      "sources": [
+        "HR-REMOTE-001",
+        "ENG-SEC-001",
+        "ENG-INC-001"
+      ]
+    },
+    {
+      "id": "E034",
+      "type": "ambiguous",
+      "question": "How much can I claim for equipment?",
+      "answer": "If this means approved home-office equipment, the limit is ₹25,000 cumulatively once every 24 months. Other equipment categories may be governed by different policies.",
+      "sources": [
+        "HR-REIMB-001"
+      ]
+    },
+    {
+      "id": "E035",
+      "type": "ambiguous",
+      "question": "What is the approval threshold for a purchase?",
+      "answer": "There are multiple thresholds: up to ₹25,000 requires manager approval; above ₹25,000 through ₹100,000 requires manager and department-head approval; above ₹100,000 also requires Finance approval.",
+      "sources": [
+        "FIN-PROC-001"
+      ]
+    },
+    {
+      "id": "E036",
+      "type": "ambiguous",
+      "question": "How long do we keep an API version?",
+      "answer": "The policy does not define a fixed lifetime. It requires at least 6 months of deprecation notice before shutdown unless a security emergency requires faster retirement.",
+      "sources": [
+        "PROD-API-001"
+      ]
+    },
+    {
+      "id": "E037",
+      "type": "ambiguous",
+      "question": "Can I work from home whenever I want?",
+      "answer": "No. Eligible employees may request hybrid work after 90 days, normally up to 3 remote days per week, subject to role requirements and manager approval.",
+      "sources": [
+        "HR-REMOTE-001"
+      ]
+    },
+    {
+      "id": "E038",
+      "type": "ambiguous",
+      "question": "What happens when something goes wrong in production?",
+      "answer": "The response depends on incident severity. SEV-1, SEV-2, and SEV-3 have different acknowledgement targets and escalation requirements.",
+      "sources": [
+        "ENG-INC-001"
+      ]
+    },
+    {
+      "id": "E039",
+      "type": "ambiguous",
+      "question": "Can I share this company document externally?",
+      "answer": "It depends on classification. Public data is approved for unrestricted external distribution; Internal data requires owner approval, and Confidential or Restricted data requires explicit authorization and potentially legal or security review.",
+      "sources": [
+        "SEC-CLASS-001"
+      ]
+    },
+    {
+      "id": "E040",
+      "type": "unanswerable",
+      "question": "What is the company's annual bonus percentage for senior engineers?",
+      "answer": "The provided corpus does not define annual bonus percentages for senior engineers.",
+      "sources": []
+    },
+    {
+      "id": "E041",
+      "type": "unanswerable",
+      "question": "Which cloud provider does Northstar use for production?",
+      "answer": "The provided corpus does not specify a production cloud provider.",
+      "sources": []
+    },
+    {
+      "id": "E042",
+      "type": "unanswerable",
+      "question": "How many employees does Northstar have?",
+      "answer": "The provided corpus does not specify the company's employee count.",
+      "sources": []
+    },
+    {
+      "id": "E043",
+      "type": "unanswerable",
+      "question": "What is the exact SLA for the public Orders API?",
+      "answer": "The provided corpus does not define an SLA for the public Orders API.",
+      "sources": []
+    },
+    {
+      "id": "E044",
+      "type": "unanswerable",
+      "question": "Who is the current CEO of Northstar Systems?",
+      "answer": "The provided corpus does not identify the current CEO.",
+      "sources": []
+    },
+    {
+      "id": "E045",
+      "type": "unanswerable",
+      "question": "What database engine is used by the production application?",
+      "answer": "The provided corpus does not specify a production database engine.",
+      "sources": []
+    }
+  ]
+}
